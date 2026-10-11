@@ -152,7 +152,7 @@ public class FCMPlugin
         FirebaseApp app =
                 FirebaseApp.getInstance(APP_NAME);
 
-        return FirebaseMessaging.getInstance(app);
+        return FirebaseMessaging.getInstance();
     }
 
     private void getToken(

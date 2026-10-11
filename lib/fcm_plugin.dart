@@ -4,8 +4,13 @@ class FCMPlugin {
   static const MethodChannel _channel = MethodChannel("flutter_tlt/fcm_plugin");
 
   static Future<void> initialize({
+    /// current_key in google-service.json
     required String apiKey,
+
+    /// mobilesdk_app_id in google-service.json
     required String appId,
+
+    /// project_number in google-service.json
     required String messagingSenderId,
     required String projectId,
     ValueChanged<Map<String, dynamic>>? onMessage,
